@@ -86,7 +86,10 @@ function App() {
         />
     ));
 
-    const displayHours = ("0" + Math.floor((time / 60000) % 60)).slice(-2) + ":";
+    // Variables to break down time
+    const minutes = ("0" + Math.floor((time / 60000) % 60)).slice(-2);
+    const seconds = ("0" + Math.floor((time / 1000) % 60)).slice(-2);
+    const milliseconds = ("0" + ((time / 10) % 100)).slice(-2);
     
     return (
         <main>
@@ -105,9 +108,7 @@ function App() {
             </button>
             <p className='game-stats'>🎲 Dice roll count: {rollCount}</p>
             <p className='game-stats'>
-                ⏲ Time elapsed: {displayHours > 0 && displayHours}
-                {("0" + Math.floor((time / 1000) % 60)).slice(-2)}:
-                {("0" + ((time / 10) % 100)).slice(-2)}
+                ⏲ Time elapsed: {minutes}:{seconds}:{milliseconds}
             </p>
         </main>
     )
