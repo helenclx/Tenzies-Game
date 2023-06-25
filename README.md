@@ -12,7 +12,7 @@ Built with Vite + React.
 
 Cased on the Tenzies game tutorial from Scrimba's [Learn React course](https://scrimba.com/learn/learnreact). However, I have made enhancements to the code to improve the app, including:
 
-- Use
+- Put real dots on the dice using CSS
 - Use relative units in CSS
 - Make the app responsive to different screen sizes
 - Added dice roll count
