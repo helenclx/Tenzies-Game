@@ -43,6 +43,11 @@ main {
     font-size: 1.2rem;
 }
 
+.congrats-msg {
+    padding-bottom: 0.4rem;
+    font-size: 2rem;
+}
+
 .dice-container {
     display: grid;
     grid-template: repeat(5, 1fr) / auto auto;
@@ -86,51 +91,51 @@ main {
     justify-content: center;
     align-items: center;
 }
-  
+
 .second-face {
     display: flex;
     justify-content: space-between;
 }
-  
+
 .second-face .pip:nth-of-type(2) {
     align-self: flex-end;
 }
-  
+
 .third-face {
     display: flex;
     justify-content: space-between;
 }
-    
+
 .third-face .pip:nth-of-type(2) {
     align-self: center;
 }
-  
+
 .third-face .pip:nth-of-type(3) {
     align-self: flex-end;
 }
-  
+
 .fourth-face, .sixth-face {
     display: flex;
     justify-content: space-between;
 }
-  
+
 .fourth-face .column, .sixth-face .column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-  
+
 .fifth-face {
     display: flex;
     justify-content: space-between;
 }
-    
+
 .fifth-face .column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-    
+
 .fifth-face .column:nth-of-type(2) {
     justify-content: center;
 }
@@ -145,7 +150,7 @@ main {
     font-size: 1.7rem;
     font-family: 'Karla', sans-serif;
     cursor: pointer;
-    margin: 1rem 0 1.5rem 0;
+    margin: 0.5rem 0;
 }
 
 .roll-dice:focus {
@@ -157,7 +162,13 @@ main {
 }
 
 .game-stats {
+    list-style: none;
+    padding: 0;
     font-size: 1.3rem;
+    display: grid;
+    grid-template: auto auto / auto auto;
+    gap: 1rem;
+    text-align: center;
 }
 
 /* Screen sizes larger than mobile */

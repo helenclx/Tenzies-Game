@@ -1,6 +1,7 @@
 # Tenzies Game
 
 ![](./screenshot.png)
+![](./screenshot-win.png)
 
 Roll until all dice are the same.
 
@@ -16,7 +17,8 @@ Cased on the Tenzies game tutorial from Scrimba's [Learn React course](https://s
 - Using relative units in CSS
 - Making the app responsive to different screen sizes
 - Adding dice roll count
-- Added a timer to track the time it took to win
+- Recording the number of dice rolls and the time it took to win
+- Tracking the best records of dice rolls and time taken to win
 
 ## Credits:
 
