@@ -1,0 +1,168 @@
+:root {
+    --body-bg-color: #0B2434;
+    --game-bg-color: #F5F5F5;
+    --roll-btn-bg: #5035FF;
+    --roll-btn-text: white;
+}
+
+body {
+    background: var(--body-bg-color);
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#root {
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background: var(--game-bg-color);
+    max-width: 95%;
+    border-radius: 0.3rem;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.7rem;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.dice-container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Dice face */
+.die-wrapper,
+[class$="face"] {
+    border-radius: 0.4rem;
+}
+
+[class$="face"] {
+    height: 3.5rem;
+    width: 3.5rem;
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    padding: 0.35rem;
+    
+    box-shadow:
+        inset 0 0.2rem white, 
+        inset 0 -0.2rem #bbb,
+        inset 0.1rem 0 #d7d7d7, 
+        inset -0.1rem 0 #d7d7d7;
+}
+
+.pip {
+    display: block;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    margin: 0.1rem;
+  
+    background-color: #333;
+    box-shadow: inset 0 0.1rem #111, inset 0 -0.25rem #555;
+}
+
+.first-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.second-face {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.second-face .pip:nth-of-type(2) {
+    align-self: flex-end;
+}
+  
+.third-face {
+    display: flex;
+    justify-content: space-between;
+}
+    
+.third-face .pip:nth-of-type(2) {
+    align-self: center;
+}
+  
+.third-face .pip:nth-of-type(3) {
+    align-self: flex-end;
+}
+  
+.fourth-face, .sixth-face {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.fourth-face .column, .sixth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.fifth-face {
+    display: flex;
+    justify-content: space-between;
+}
+    
+.fifth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    
+.fifth-face .column:nth-of-type(2) {
+    justify-content: center;
+}
+
+/* Roll button */
+.roll-dice {
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--roll-btn-bg);
+    color: var(--roll-btn-text);
+    font-size: 1.7rem;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.roll-dice:focus {
+    outline: none;
+}
+
+.roll-dice:active {
+    box-shadow: inset 0.2rem 0.2rem 0.8rem -0.15rem rgba(0, 0, 0, 0.7);
+}
+
+.game-stats {
+    font-size: 1.3rem;
+}
+
+/* Screen sizes larger than mobile */
+@media only screen and (min-width: 30rem) {
+    main {
+        max-width: 30rem;
+    }
+}
