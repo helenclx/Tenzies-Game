@@ -4,7 +4,7 @@
 
 Roll until all dice are the same.
 
-Play the game here: https://tenzies-game-2b878d.netlify.app/
+Play the game here: https://helenclx.github.io/Tenzies-Game/
 
 ## Build Information
 
