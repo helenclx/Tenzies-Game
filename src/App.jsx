@@ -8,6 +8,8 @@ function App() {
     const [dice, setDice] = useState(allNewDice());
     const [tenzies, setTenzies] = useState(false);
     const [rollCount, setRollCount] = useState(0);
+    const [time, setTime] = useState(0);
+    const [running, setRunning] = useState(false);
     
     useEffect(() => {
         const allHeld = dice.every((die) => die.isHeld);
@@ -15,8 +17,21 @@ function App() {
         const allSameValue = dice.every((die) => die.value === firstValue);
         if (allHeld && allSameValue) {
             setTenzies(true);
+            setRunning(false);
         }
-    }, [dice])
+    }, [dice]);
+
+    useEffect(() => {
+        let interval;
+        if (running) {
+            interval = setInterval(() => {
+                setTime((prevTime) => prevTime + 10);
+            }, 10);
+        } else if (!running) {
+            clearInterval(interval);
+        }
+        return () => clearInterval(interval);
+    }, [running]);
 
     function generateNewDie() {
         return {
@@ -37,6 +52,7 @@ function App() {
     function rollDice() {
         if(!tenzies) {
             setRollCount((prevCount) => prevCount + 1);
+            setRunning(true);
 
             setDice((oldDice) => oldDice.map(die => {
                 return die.isHeld ? 
@@ -47,10 +63,13 @@ function App() {
             setTenzies(false);
             setDice(allNewDice());
             setRollCount(0);
+            setRunning(false);
         }
     }
     
     function holdDice(id) {
+        setRunning(true);
+        
         setDice((oldDice) => oldDice.map(die => {
             return die.id === id ? 
                 {...die, isHeld: !die.isHeld} :
@@ -66,6 +85,8 @@ function App() {
             holdDice={() => holdDice(die.id)}
         />
     ));
+
+    const displayHours = ("0" + Math.floor((time / 60000) % 60)).slice(-2) + ":";
     
     return (
         <main>
@@ -80,9 +101,14 @@ function App() {
                 className="roll-dice" 
                 onClick={rollDice}
             >
-                {tenzies ? "New Game" : "Roll"}
+                {tenzies ? "🎲 New Game 🎲" : "🎲 Roll 🎲"}
             </button>
-            <p className='game-stats'>Dice roll count: {rollCount}</p>
+            <p className='game-stats'>🎲 Dice roll count: {rollCount}</p>
+            <p className='game-stats'>
+                ⏲ Time elapsed: {displayHours > 0 && displayHours}
+                {("0" + Math.floor((time / 1000) % 60)).slice(-2)}:
+                {("0" + ((time / 10) % 100)).slice(-2)}
+            </p>
         </main>
     )
 }

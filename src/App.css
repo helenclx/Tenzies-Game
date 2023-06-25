@@ -145,7 +145,7 @@ main {
     font-size: 1.7rem;
     font-family: 'Karla', sans-serif;
     cursor: pointer;
-    margin: 1rem 0;
+    margin: 1rem 0 1.5rem 0;
 }
 
 .roll-dice:focus {
