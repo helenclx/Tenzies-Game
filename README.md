@@ -6,6 +6,9 @@ Roll until all dice are the same.
 
 Built with Vite + React.
 
+## Links:
+- [Play the game](https://tenzies-game-2b878d.netlify.app/)
+
 ## Credits:
 - Scrimba's [Learn React course](https://scrimba.com/learn/learnreact) - tutorial to create this game
 - [Flaticon](https://www.flaticon.com/) -  for the dice vector image that is used as the page's favicon
