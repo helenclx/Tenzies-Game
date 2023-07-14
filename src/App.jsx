@@ -115,11 +115,7 @@ function App() {
 
 	return (
         <main>
-			{tenzies &&
-					<Confetti
-							width={window.innerWidth}
-							height={window.innerHeight}
-					/>}
+			{tenzies && <Confetti />}
 
 			<h1 className="title">Tenzies</h1>
 			<p className="instructions">Roll until all dice are the same. 
