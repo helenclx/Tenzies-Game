@@ -79,6 +79,7 @@ function App() {
 			setTenzies(false);
 			setDice(allNewDice());
 			setRollCount(0);
+			setTime(0);
 			setRunning(false);
         }
 	}
