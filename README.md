@@ -11,7 +11,7 @@ Play the game here: https://helenclx.github.io/Tenzies-Game/
 
 Built with Vite + React.
 
-Cased on the Tenzies game tutorial from Scrimba's [Learn React course](https://scrimba.com/learn/learnreact). However, I have made enhancements to the code to improve the app, including:
+Based on the Tenzies game tutorial from Scrimba's [Learn React course](https://scrimba.com/learn/learnreact). However, I have made enhancements to the code to improve the app, including:
 
 - Putting real dots on the dice using CSS
 - Using relative units in CSS
