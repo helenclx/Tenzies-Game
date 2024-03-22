@@ -7,7 +7,7 @@ Roll until all dice are the same.
 
 Play the game here: https://helenclx.github.io/Tenzies-Game/
 
-## Build Information
+## Project Information
 
 Built with Vite + React.
 
@@ -20,6 +20,28 @@ Based on the Tenzies game tutorial from Scrimba's [Learn React course](https://s
 - Recording the number of dice rolls and the time it took to win
 - Tracking the best records of dice rolls and time taken to win
 - Improved accessibility: the entire game can be interacted with key presses, along withvisible focus outlines
+
+## Running the Project Locally
+1. Clone this repository locally
+```
+git clone https://github.com/helenclx/Tenzies-Game.git
+```
+2. Install dependencies
+```
+npm install
+```
+3. Run the project
+```
+npm run dev
+```
+4. Open http://localhost:5173/Tenzies-Game/ in your browser
+
+## Development Dependencies
+- [Font Awesome](https://fontawesome.com/) 6.5.1
+- Google Fonts: [Karla](https://fonts.google.com/specimen/Karla)
+- [Nano ID](https://www.npmjs.com/package/nanoid)
+- React
+- [react-confetti](https://www.npmjs.com/package/react-confetti)
 
 ## Credits:
 
