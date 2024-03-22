@@ -42,14 +42,14 @@ function App() {
 	}, [running]);
 
 	useEffect(() => {
-        localStorage.setItem("bestRolls", JSON.stringify(bestRolls));
-        }, [bestTime]);
+        	localStorage.setItem("bestRolls", JSON.stringify(bestRolls));
+    }, [bestTime]);
 
-        useEffect(() => {
-        localStorage.setItem("bestTime", JSON.stringify(bestTime));
-        }, [bestTime]);
+	useEffect(() => {
+        	localStorage.setItem("bestTime", JSON.stringify(bestTime));
+    }, [bestTime]);
 
-        function generateNewDie() {
+	function generateNewDie() {
         return {
 			value: Math.ceil(Math.random() * 6),
 			isHeld: false,
