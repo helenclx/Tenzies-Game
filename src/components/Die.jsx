@@ -91,11 +91,19 @@ export default function Die(props) {
             diceFace = diceSix;
     }
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            props.holdDice();
+        }
+    };
+
     return (
-        <div 
+        <div
             className="die-wrapper"
             style={styles}
             onClick={props.holdDice}
+            tabIndex={0}
+            onKeyDown={handleKeyDown}
         >
             {/* <h2 className="die-num">{props.value}</h2> */}
             {diceFace}
