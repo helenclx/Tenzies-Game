@@ -14,19 +14,19 @@ export default function GameStats(props) {
     return (
         <ul className='game-stats'>
             <li>
-                <p>🎲 Dice rolls:</p>
+                <p>Dice rolls:</p>
                 <span>{props.rolls}</span>
             </li>
             <li>
-                <p>⏲ Time elapsed:</p>
+                <p>Time elapsed:</p>
                 <span>{minutes}:{seconds}:{milliseconds}</span>
             </li>
             <li>
-                <p>🎲 Best Rolls:</p>
+                <p>Best Rolls:</p>
                 <span>{props.bestRolls}</span>
             </li>
             <li>
-                <p>⏲ Best Time:</p>
+                <p>Best Time:</p>
                 <span>{bestMinutes}:{bestSeconds}:{bestMilliseconds}</span>
             </li>
         </ul>

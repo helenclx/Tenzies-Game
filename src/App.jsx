@@ -127,9 +127,9 @@ function App() {
 				{diceElements}
 			</div>
 
-			{tenzies && <h2 className="congrats-msg" aria-live="polite">🎉 You Win! 🎉</h2>}
+			{tenzies && <h2 className="congrats-msg" aria-live="polite">You Win! 🎉</h2>}
 			<button className="roll-dice" onClick={rollDice} aria-label={diceRollBtnLabel}>
-				🎲 {diceRollBtnLabel} 🎲
+				{diceRollBtnLabel} 🎲
 			</button>
 
 			<GameStats
