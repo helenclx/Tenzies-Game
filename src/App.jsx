@@ -125,7 +125,7 @@ function App() {
 				{diceElements}
 			</div>
 
-			{tenzies && <h2 className='congrats-msg'>🎉 You Win! 🎉</h2>}
+			{tenzies && <h2 className="congrats-msg" aria-live="polite">🎉 You Win! 🎉</h2>}
 			<button className="roll-dice" onClick={rollDice}>
 				{tenzies ? "🎲 New Game 🎲" : "🎲 Roll 🎲"}
 			</button>
