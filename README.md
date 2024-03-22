@@ -19,6 +19,7 @@ Based on the Tenzies game tutorial from Scrimba's [Learn React course](https://s
 - Adding dice roll count
 - Recording the number of dice rolls and the time it took to win
 - Tracking the best records of dice rolls and time taken to win
+- Improved accessibility: the entire game can be interacted with key presses, along withvisible focus outlines
 
 ## Credits:
 
