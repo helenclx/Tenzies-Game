@@ -113,6 +113,8 @@ function App() {
         />
 	));
 
+	const diceRollBtnLabel = tenzies ? "New Game" : "Roll";
+
 	return (
         <main>
 			{tenzies && <Confetti />}
@@ -126,8 +128,8 @@ function App() {
 			</div>
 
 			{tenzies && <h2 className="congrats-msg" aria-live="polite">🎉 You Win! 🎉</h2>}
-			<button className="roll-dice" onClick={rollDice}>
-				{tenzies ? "🎲 New Game 🎲" : "🎲 Roll 🎲"}
+			<button className="roll-dice" onClick={rollDice} aria-label={diceRollBtnLabel}>
+				🎲 {diceRollBtnLabel} 🎲
 			</button>
 
 			<GameStats
