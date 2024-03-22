@@ -183,7 +183,8 @@ main {
     font-size: 1.3rem;
     display: grid;
     grid-template: auto auto / auto auto;
-    gap: 1rem;
+    row-gap: 1em;
+    column-gap: 4em;
     text-align: center;
 }
 
