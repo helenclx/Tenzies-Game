@@ -162,7 +162,8 @@ main {
 }
 
 .roll-dice:focus {
-    outline: none;
+    outline: 0.2em solid var(--clr-roll-btn);
+    outline-offset: 0.13em;
 }
 
 .roll-dice:active {
