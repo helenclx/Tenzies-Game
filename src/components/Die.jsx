@@ -98,6 +98,7 @@ export default function Die(props) {
             onClick={props.holdDice}
             aria-label={`Dice value of ${props.value}`}
         >
+            {/* <h2 className="die-num">{props.value}</h2> */}
             {diceFace}
         </button>
     )
