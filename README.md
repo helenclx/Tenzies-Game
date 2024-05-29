@@ -1,7 +1,7 @@
 # Tenzies Game
 
-![](./screenshot.png)
-![](./screenshot-win.png)
+![Screenshot of Tenzies game](./screenshot.png)
+![Screenshot of winning the Tenzies game](./screenshot-win.png)
 
 Roll until all dice are the same.
 
@@ -19,22 +19,25 @@ Based on the Tenzies game tutorial from Scrimba's [Learn React course](https://s
 - Adding dice roll count
 - Recording the number of dice rolls and the time it took to win
 - Tracking the best records of dice rolls and time taken to win
-- Improved accessibility: the entire game can be interacted with key presses, along withvisible focus outlines
+- Improved accessibility: the entire game can be interacted with key presses, along with clear focus outlines
 
 ## Running the Project Locally
+
+Recommended JavaScript runtime: [Bun](https://bun.sh/)
+
 1. Clone this repository locally
-```
-git clone https://github.com/helenclx/Tenzies-Game.git
-```
-2. Install dependencies
-```
-npm install
-```
-3. Run the project
-```
-npm run dev
-```
-4. Open http://localhost:5173/Tenzies-Game/ in your browser
+    ```
+    git clone https://github.com/helenclx/Tenzies-Game.git
+    ```
+1. Install dependencies
+    ```
+    bun install
+    ```
+1. Run the project
+    ```
+    bun run dev
+    ```
+1. Open http://localhost:5173/Tenzies-Game/ in your browser
 
 ## Development Dependencies
 - [Font Awesome](https://fontawesome.com/) 6.5.1
