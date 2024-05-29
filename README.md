@@ -5,7 +5,7 @@
 
 Roll until all dice are the same.
 
-Play the game here: https://helenclx.github.io/Tenzies-Game/
+Play the game here: https://helenchong.dev/Tenzies-Game/
 
 ## Project Information
 
